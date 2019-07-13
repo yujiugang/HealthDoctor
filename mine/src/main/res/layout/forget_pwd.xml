@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/forget_bg">
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/forget"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/forgetEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/forget_email"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/forgetEmailBut"
+                android:layout_width="58dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_shape"
+                android:text="@string/regis_get_code"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/forgetEmailBut"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/forgetCode"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/regis_get_code" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/forgetCode"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgetNextBut"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/forget"
+        android:text="@string/next_step"
+        android:textColor="@color/colorText" />
+
+
+</RelativeLayout>

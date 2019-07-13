@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:src="@mipmap/login_bg" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/login_image_phone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/login_icon_mail_n"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/login_image_phone"
+            android:background="@null"
+            android:hint="@string/login_email"
+            android:textColor="@color/colorGray"
+            android:textSize="14dp" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/login_image_lock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/login_icon_lock_n"
+            android:layout_marginLeft="30dp"
+            />
+        <EditText
+            android:id="@+id/loginPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_pwd"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorGray"
+            android:background="@null"
+            android:password="true"
+            android:layout_toRightOf="@+id/login_image_lock"
+            />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/loginEye"
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:background="@mipmap/login_icon_hide_password_n"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        >
+
+        <TextView
+            android:id="@+id/forgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/forget_the_password"
+            android:textColor="@color/colorGray"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/registerText"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/application_for_admission"
+            android:textColor="@color/colorText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/loginBut"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/background_shape"
+        android:text="@string/login_but"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

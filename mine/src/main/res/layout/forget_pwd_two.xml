@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/forget_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/forget"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/forgetPwd1"
+                android:hint="@string/setPwd"
+                android:background="@null"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/forgetEye"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/login_icon_hide_password_n"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/colorView"
+                android:layout_below="@id/forgetEye"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/forgetPwd2"
+                android:hint="@string/setPwdTwo"
+                android:background="@null"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/forgetEyeTwo"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/login_icon_hide_password_n"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/colorView"
+                android:layout_below="@id/forgetEyeTwo"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/forgetFinishBut"
+            android:background="@drawable/forget"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/finish"
+            android:textColor="@color/colorText"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+             />
+
+
+</RelativeLayout>
