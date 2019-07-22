@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bindIDReturn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/common_icon_back_black_n" />
+
+        <TextView
+            android:text="@string/bdID"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@mipmap/id_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/bindIDSim1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@mipmap/my_icon_camera_n"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorText"/>
+
+                <TextView
+                    android:id="@+id/bindPortrait"
+                    android:layout_below="@+id/bindIDSim1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/portrait"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorText"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@mipmap/id_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/bindIDSim2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@mipmap/my_icon_camera_n"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorText"/>
+
+                <TextView
+                    android:id="@+id/bindNationalEmblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/national_emblem"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/bindIDSim2"
+                    android:textColor="@color/colorText"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="84dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="36dp">
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:textSize="10sp"
+            android:background="@drawable/background_shape"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:text="@string/next_step"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

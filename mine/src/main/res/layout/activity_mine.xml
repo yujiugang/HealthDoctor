@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MineActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/myReturn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="26dp"
+            android:src="@mipmap/common_icon_back_black_n" />
+
+        <ImageView
+            android:id="@+id/myMessage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/common_nav_message_black_n" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/mySeeData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:text="@string/select_data"
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/myRightLcon"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/mySeeData"
+                android:src="@mipmap/common_information_next_n" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="36dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/forget"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myHistoricalInquiry"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/my_icon_historical_inquiry_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/historical_inquiry"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/forget"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myWallet"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/my_icon_wallet_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/my_wallet"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="36dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/forget"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myAdoptIdea"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/my_icon_recommendations_adopted_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/suggestions_adopted"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/forget"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myAutomaticResponse"
+                    android:layout_width="48dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/my_icon_automatic_response_n" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/automatic_response"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

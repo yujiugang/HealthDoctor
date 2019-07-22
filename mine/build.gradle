@@ -53,9 +53,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':base')
 
-    //设置主显示
-    api project(path: ':app', configuration: 'default')
-
     //路由
     api 'com.alibaba:arouter-api:1.4.1'
     //路由(要跳就哪个就需要在哪里添加)

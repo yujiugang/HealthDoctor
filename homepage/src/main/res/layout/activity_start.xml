@@ -7,6 +7,47 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.StartActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="118dp"
+            android:layout_height="86dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/start1" />
 
+        <TextView
+            android:id="@+id/wd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="维度健康"
+            android:textColor="#3087ea"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="医生版"
+            android:textColor="#3087ea"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="©八维移动通信学院毕业作品"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
 </RelativeLayout>
