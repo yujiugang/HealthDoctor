@@ -15,6 +15,7 @@ import com.example.mine.view.fragment.loginregister.RegisterTwoFragment;
 @Route(path = "/one/two/three")
 public class LoginRegisterActivity extends IBaseActivity {
 
+    //////wode
     private LoginFragment loginFragment;
     private RegisterFragment registerFragment;
     private FragmentManager manager;
