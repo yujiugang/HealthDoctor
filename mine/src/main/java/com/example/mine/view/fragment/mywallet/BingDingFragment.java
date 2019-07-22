@@ -41,6 +41,20 @@ public class BingDingFragment extends IBaseFragment {
             }
         });
 
+        bindBank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BingDingBankFragment bingDingBankFragment = new BingDingBankFragment();
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .addToBackStack(null)
+                        .replace(R.id.myWalletFrame, bingDingBankFragment)
+                        .commit();
+
+            }
+        });
+
 
     }
 

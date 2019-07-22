@@ -8,7 +8,7 @@ public class BingDingBankFragment extends IBaseFragment {
 
     @Override
     protected int setLayout() {
-        return R.layout.binding;
+        return R.layout.binding_bank;
     }
 
     @Override

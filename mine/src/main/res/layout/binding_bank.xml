@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bindReturn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/common_icon_back_black_n" />
+
+        <TextView
+            android:text="@string/bind_bank11"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@mipmap/bank_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/bindIDSim2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@mipmap/my_icon_camera_n"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorText"/>
+
+                <TextView
+                    android:id="@+id/bindBank"
+                    android:layout_below="@+id/bindIDSim2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bind_bankPositive"
+                    android:textSize="14sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorText"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
