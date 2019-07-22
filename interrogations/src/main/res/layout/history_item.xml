@@ -78,7 +78,7 @@
             android:layout_height="34dp"
             android:layout_below="@+id/date"
             android:layout_marginLeft="43dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:layout_toRightOf="@+id/record"
             android:background="@drawable/blue_comment_shape"
             android:text="@string/comment_interrogation"
