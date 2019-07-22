@@ -5,6 +5,7 @@ import com.example.base.model.bean.CircleTitleBean;
 import com.example.base.model.bean.CustomPhotoBean;
 import com.example.base.model.bean.DefaultPhotoBean;
 import com.example.base.model.bean.HealthDetailsBean;
+import com.example.base.model.bean.HistoryBean;
 import com.example.base.model.bean.InterrogationBean;
 import com.example.base.model.bean.LoginBean;
 import com.example.base.model.bean.MineBean;
@@ -27,6 +28,11 @@ import retrofit2.http.Query;
 
 public interface Api {
 
+    /**
+     * 于弟弟的接口
+     * @param emailCode
+     * @return
+     */
     //发送邮箱
     @FormUrlEncoded
     @POST("health/doctor/v1/sendEmailCode")
@@ -64,27 +70,6 @@ public interface Api {
     @GET("health/doctor/verify/v1/findDoctorById")
     Observable<MineBean> getMine();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //查询科室列表
     //http://172.17.8.100/health/share/knowledgeBase/v1/findDepartment
     @GET("health/share/knowledgeBase/v1/findDepartment")
@@ -115,5 +100,11 @@ public interface Api {
     //http：//172.17.8.100/health/doctor/inquiry/verify/v1/findInquiryRecordList
     @GET("health/doctor/inquiry/verify/v1/findInquiryRecordList")
     Observable<InterrogationBean> interrogation();
+
+
+    //查询医生的历史问诊记录列表
+    //http://172.17.8.100/health/doctor/inquiry/verify/v1/findHistoryInquiryRecord
+    @GET("health/doctor/inquiry/verify/v1/findHistoryInquiryRecord")
+    Observable<HistoryBean> history(@Query("page")int page, @Query("count")int count);
 
 }

@@ -67,22 +67,6 @@
     <string name="portrait">点击拍摄/上传人像面</string>
     <string name="national_emblem">点击拍摄/上传国徽面</string>
 
-    <string name="bind_bank11">绑定银行卡</string>
-    <string name="bind_bankPositive">点击拍摄/上传银行卡正面</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--病友圈搜索-->
     <string name="sreach">搜索</string>
     <string name="sreach_hostory">搜索历史</string>

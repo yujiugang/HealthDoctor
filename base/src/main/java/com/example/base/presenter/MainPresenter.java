@@ -6,6 +6,9 @@ import com.example.base.model.bean.CustomPhotoBean;
 import com.example.base.model.bean.DefaultPhotoBean;
 import com.example.base.model.bean.ForgetPwdBean;
 import com.example.base.model.bean.HealthDetailsBean;
+import com.example.base.model.bean.HistoryBean;
+import com.example.base.model.bean.InterrogationBean;
+import com.example.base.model.bean.HealthDetailsBean;
 import com.example.base.model.bean.InterrogationBean;
 import com.example.base.model.bean.LoginBean;
 import com.example.base.model.bean.MineBean;
@@ -127,11 +130,6 @@ public class MainPresenter extends BasePresenter<IMainView.IMainShow> {
                 });
     }
 
-
-
-
-
-
     //查询科室列表
     public void LoadShowCricleTitleData() {
         okHttp.api.circle_title()
@@ -230,5 +228,28 @@ public class MainPresenter extends BasePresenter<IMainView.IMainShow> {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    //查询医生的历史问诊记录列表
+    public void LoadShowHistoryInterrogationBeanData(int page,int count) {
+        okHttp.api.history(page,count)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<HistoryBean>() {
+                    @Override
+                    public void accept(HistoryBean bean) throws Exception {
+                        getView().onSuccess(bean);
+                    }
+                });
+    }
 
 }

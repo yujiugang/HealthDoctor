@@ -11,6 +11,9 @@
             android:value="640" />
 
         <activity android:name=".InterrogationActivity"></activity>
+
+
+        <activity android:name=".HistoryActivity"></activity>
     </application>
 
 </manifest>
