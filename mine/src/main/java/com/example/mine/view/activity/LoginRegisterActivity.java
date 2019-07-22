@@ -1,25 +1,20 @@
 package com.example.mine.view.activity;
 
 import android.support.v4.app.FragmentManager;
-import android.widget.FrameLayout;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.base.view.activity.IBaseActivity;
 import com.example.mine.R;
-import com.example.mine.R2;
-import com.example.mine.view.fragment.ForGetPwdFragment;
-import com.example.mine.view.fragment.ForGetPwdTwoFragment;
-import com.example.mine.view.fragment.LoginFragment;
-import com.example.mine.view.fragment.RegisterFragment;
-import com.example.mine.view.fragment.RegisterThreeFragment;
-import com.example.mine.view.fragment.RegisterTwoFragment;
+import com.example.mine.view.fragment.loginregister.ForGetPwdFragment;
+import com.example.mine.view.fragment.loginregister.ForGetPwdTwoFragment;
+import com.example.mine.view.fragment.loginregister.LoginFragment;
+import com.example.mine.view.fragment.loginregister.RegisterFragment;
+import com.example.mine.view.fragment.loginregister.RegisterThreeFragment;
+import com.example.mine.view.fragment.loginregister.RegisterTwoFragment;
 
-import butterknife.BindView;
-
+@Route(path = "/one/two/three")
 public class LoginRegisterActivity extends IBaseActivity {
 
-
-    @BindView(R2.id.loginRegisterFrame)
-    FrameLayout loginRegisterFrame;
     private LoginFragment loginFragment;
     private RegisterFragment registerFragment;
     private FragmentManager manager;
@@ -49,8 +44,8 @@ public class LoginRegisterActivity extends IBaseActivity {
                 .add(R.id.loginRegisterFrame, registerFragment)
                 .add(R.id.loginRegisterFrame, registerTwoFragment)
                 .add(R.id.loginRegisterFrame, registerThreeFragment)
-                .add(R.id.loginRegisterFrame,forGetPwdFragment)
-                .add(R.id.loginRegisterFrame,forGetPwdTwoFragment)
+                .add(R.id.loginRegisterFrame, forGetPwdFragment)
+                .add(R.id.loginRegisterFrame, forGetPwdTwoFragment)
                 .show(loginFragment)
                 .hide(registerFragment)
                 .hide(registerTwoFragment)

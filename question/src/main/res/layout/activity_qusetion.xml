@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write_Que"
+    tools:context=".activity.QusetionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/common_icon_back_black_n" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/common_nav_message_black_n" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/blue_Que"
+                app:tabTextColor="@color/ash_Que" />
+
+            <ImageView
+                android:id="@+id/sreach"
+                android:layout_marginLeft="20dp"
+                android:layout_width="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/common_icon_search_n" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/widthAsh_Que" />
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recycler_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

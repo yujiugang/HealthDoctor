@@ -1,3 +1,124 @@
 <resources>
-    <string name="app_name">Base</string>
+    <string name="app_name">Mine</string>
+
+    <string name="login_email">请输入邮箱账号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="forget_the_password">忘记密码</string>
+    <string name="application_for_admission">申请入驻</string>
+    <string name="login_but">登录</string>
+
+    <string name="regis_perfect">完善信息</string>
+    <string name="regis_onsuccess">审核通过即可成功入驻</string>
+    <string name="regis_email">您的邮箱账号</string>
+    <string name="regis_verification_code">请输入验证码</string>
+    <string name="regis_get_code">获取验证码</string>
+    <string name="regis_pwd">请输入密码</string>
+    <string name="regis_repeat_pwd">请再次输入密码</string>
+    <string name="next_step">下一步</string>
+
+    <string name="help_audit">填写正确有助于快速通过审核</string>
+    <string name="regis_name">您的真实姓名</string>
+    <string name="regis_hospital">您所在医院</string>
+    <string name="regis_department">您所在科室</string>
+    <string name="regis_title">您的职称</string>
+
+    <string name="regis_resume">您的个人简历</string>
+    <string name="resume">个人简历啊giao!!!</string>
+    <string name="reg_within_500">五百字以内</string>
+    <string name="reg_BeGoodAt">您的擅长领域</string>
+    <string name="reg_within_300">三百字以内</string>
+    <string name="resume1">擅长领域啊giao!!!</string>
+
+    <string name="forget_email">请输入邮箱账号</string>
+    <string name="forget_code">请输入验证码</string>
+    <string name="forget_pwd">请输入密码</string>
+    <string name="forget_pwd_two">请输入确认密码</string>
+
+    <string name="setPwd">请设置新密码</string>
+    <string name="setPwdTwo">请再次确认密码</string>
+    <string name="finish">完成</string>
+
+    <string name="select_data">查看资料</string>
+    <string name="historical_inquiry">历史问诊</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="suggestions_adopted">被采纳意见</string>
+    <string name="automatic_response">设置自动回复</string>
+
+    <string name="replaceImage">更换形象照</string>
+    <string name="cancel">取消</string>
+    
+    <string name="set_Image_Photos">为您设置一张形象照吧</string>
+    <string name="finishSet">完成设置</string>
+
+    <string name="custom_photo">自定义形象照</string>
+    <string name="the_one_and_only">让你的形象独一无二</string>
+
+    <string name="photo">拍一张</string>
+    <string name="album">从相册选择</string>
+
+    <string name="specified_information">绑定信息</string>
+    <string name="ID">身份证</string>
+    <string name="bindingID">绑定身份证>></string>
+    <string name="bank">银行卡</string>
+    <string name="binding_band">绑定银行卡>></string>
+    <string name="change_bank">如需更改银行卡信息请致电   000-5976432</string>
+
+    <string name="bdID">绑定身份证</string>
+    <string name="portrait">点击拍摄/上传人像面</string>
+    <string name="national_emblem">点击拍摄/上传国徽面</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--病友圈搜索-->
+    <string name="sreach">搜索</string>
+    <string name="sreach_hostory">搜索历史</string>
+    <string name="sreach_hint">请输入病症名称或标题关键字</string>
+    <string name="go_no_sreach">抱歉! 没有找到 “</string>
+    <string name="apirs_no_sreach">” 的相关病友圈</string>
+    <string name="all_no_sreach">抱歉! 没有找到 " " 的相关病友圈</string>
+    <!--病友圈详情-->
+    <string name="speak">说点什么吧...</string>
+    <string name="h_money">H币</string>
+    <string name="alpha_details">帮助解答问题?</string>
+    <string name="alpha2_details">将有机会获得H币哟～</string>
+    <string name="title_details">急诊: 面神经炎的治疗方法</string>
+    <string name="name_details">张三</string>
+    <string name="disease_details">[病症]</string>
+    <string name="diseaseContent_details">面神经炎</string>
+    <string name="department_details">[科室]</string>
+    <string name="departmentContent_details">内科</string>
+    <string name="diseaseDetails_details">[病症详情]</string>
+    <string name="diseaseContentDetails_details">周围性神经炎...</string>
+    <string name="treatment_details">[治疗经历]</string>
+    <string name="aboutImg_details">[相关图片]</string>
+    <string name="money_details">30H币</string>
+    <string name="myAnswer_details">我的解答</string>
+    <string name="answer_details">我来解答</string>
+    <string name="hospital_detalis">北京天坛医院</string>
+    <string name="data_detalis">2018.12.10-12.15</string>
+
+    <!--问诊-->
+    <string name="gift_interrogation">收到的礼物</string>
+    <string name="history_interrogation">历史问诊</string>
+    <string name="interrogation">问诊列表</string>
+    <string name="null_interrogation">嘤～空空如也!</string>
+
+    <!-- 历史问诊列表条目 -->
+    <string name="people_interrogation">问诊人</string>
+    <string name="time_interrogation">问诊时间</string>
+    <string name="record_interrogation">查看问诊记录</string>
+    <string name="comment_interrogation">查看评价</string>
 </resources>

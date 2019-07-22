@@ -1,0 +1,93 @@
+package com.bw.view.activity;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.OrientationHelper;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.PopupWindow;
+
+import com.bw.R;
+import com.bw.model.bean.PopOneBean;
+import com.bw.model.bean.PopTwoBean;
+import com.bw.presenter.HomePresenter;
+import com.bw.presenter.PopTwoPresenter;
+import com.bw.view.adapter.PopOneAdapter;
+import com.bw.view.interfaces.HomeInterFaces;
+import com.bw.view.interfaces.YesInterFaces;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity implements HomeInterFaces<PopOneBean>,YesInterFaces<PopTwoBean> {
+
+    @BindView(R.id.popImage)
+    ImageView popImage;
+    @BindView(R.id.popXrec)
+    XRecyclerView popXrec;
+    private HomePresenter homePresenter;
+    private PopupWindow popupWindow;
+    private RecyclerView popOneRec;
+    private RecyclerView popTwoRec;
+    private String firstId;
+    private PopTwoPresenter popTwoPresenter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //butter
+        ButterKnife.bind(this);
+        //初始化
+        initView();
+        //
+        popImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popupWindow.showAsDropDown(v);
+            }
+        });
+        //pop
+        popMethod();
+        //EventBus
+        EventBus.getDefault().register(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN,sticky = true)
+    public void PassvalueOne(String oneId){
+        firstId = oneId;
+        Log.i("oneId112", "PassvalueOne: "+oneId);
+
+        popTwoPresenter.getPCallBack(oneId);
+    }
+
+    private void initView() {
+        homePresenter = new HomePresenter();
+
+        homePresenter.setView(this);
+
+        homePresenter.getPCallBack();
+
+        popTwoPresenter = new PopTwoPresenter();
+
+        popTwoPresenter.setView(this);
+
+    }
+
+    private void popMethod() {
+        View view = View.inflate(MainActivity.this, R.layout.pop, null);
+        popOneRec = view.findViewById(R.id.popOneRec);
+        popTwoRec = view.findViewById(R.id.popTwoRec);
+
+        popupWindow = new PopupWindow(view, ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT);
+        //设置外部可点
+        popupWindow.setOutsideTouchab

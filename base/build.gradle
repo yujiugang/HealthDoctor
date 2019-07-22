@@ -101,4 +101,7 @@ dependencies {
     //沉浸式
     api 'com.gyf.immersionbar:immersionbar:3.0.0-beta03'
 
+    //XBanner
+    api 'com.github.xiaohaibin:XBanner:1.6.1'
+
 }

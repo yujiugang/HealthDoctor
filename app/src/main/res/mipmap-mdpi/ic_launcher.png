@@ -1,0 +1,41 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$Copy" count="574" />
+      <entry action="$Cut" count="16" />
+      <entry action="$Delete" count="305" />
+      <entry action="$Paste" count="835" />
+      <entry action="$Redo" count="13" />
+      <entry action="$SelectAll" count="350" />
+      <entry action="$Undo" count="21080" />
+      <entry action="ActivateTerminalToolWindow" count="4" />
+      <entry action="Android Profiler" count="2" />
+      <entry action="Android.AnalyzeApk" count="2" />
+      <entry action="Android.BuildApk" count="2" />
+      <entry action="Android.CreateResourceDirectory" count="1" />
+      <entry action="Android.GenerateSignedApk" count="6" />
+      <entry action="Android.RunAndroidAvdManager" count="3" />
+      <entry action="Android.RunAndroidSdkManager" count="7" />
+      <entry action="Android.SyncProject" count="39" />
+      <entry action="AndroidConnectDebuggerAction" count="29" />
+      <entry action="Back" count="1544" />
+      <entry action="ChangesView.GroupBy" count="1" />
+      <entry action="CheckinFiles" count="16" />
+      <entry action="CheckinProject" count="1" />
+      <entry action="ClassNameCompletion" count="547" />
+      <entry action="CleanGradleProject" count="19" />
+      <entry action="CloseAllEditors" count="258" />
+      <entry action="CloseAllEditorsButActive" count="79" />
+      <entry action="CloseProject" count="5" />
+      <entry action="CollapseBlock" count="1" />
+      <entry action="CommentByBlockComment" count="244" />
+      <entry action="CommentByLineComment" count="52" />
+      <entry action="CompareTwoFiles" count="3" />
+      <entry action="ConsoleView.ClearAll" count="28" />
+      <entry action="CopyPaths" count="2" />
+      <entry action="CopyReference" count="2" />
+      <entry action="CreateLibraryFromFile" count="1" />
+      <entry action="CreateRunConfiguration" count="1" />
+      <entry action="Debug" count="405" />
+      <entry action="Debugger.EditFrameSource" count="2" />
+      <entry action="Debugger.Show

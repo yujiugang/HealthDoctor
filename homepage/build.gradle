@@ -57,6 +57,6 @@ dependencies {
     //路由(要跳就哪个就需要在哪里添加)
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 
-    //butterknife快速查找资源的依赖(黄油刀)
+    //butterknife
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

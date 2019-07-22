@@ -1,9 +1,13 @@
 package com.example.base.view.activity;
 
 import android.Manifest;
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import com.example.base.R;
@@ -79,6 +83,22 @@ public abstract class IBaseActivity extends AppCompatActivity {
             // Do not have permissions, request them now
             EasyPermissions.requestPermissions(this, getString(R.string.app_name),
                     RC_CAMERA_AND_LOCATION, perms);
+        }
+    }
+
+    public void keyWordHide(){
+        //隐藏软键盘
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm != null) {
+            imm.hideSoftInputFromWindow(new View(this).getWindowToken(), 0);
+        }
+        InputMethodManager imm1 = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm1 != null) {
+            View v1 = new View(this);
+            ViewGroup g1 = (ViewGroup)getWindow().getDecorView();
+            ViewGroup g2 = (ViewGroup)g1.getChildAt(0);
+            g2.addView(v1);
+            imm.hideSoftInputFromWindow(v1.getWindowToken(), 0);
         }
     }
 

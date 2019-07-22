@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorText">#3087ea</color>
+
+    <color name="colorGray">#666666</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorView">#f2f2f2</color>
+
+    <color name="colorViewTwo">#F8F6F6</color>
+
+    <color name="colorRed">#d92109</color>
+
+
+
+    <color name="wr_999">#999</color>
+    <color name="write_Que">#ffffff</color>
+    <color name="blanchedalmond">#d3d3d3</color>
+    <color name="ash_little_Que">#e4dfdf</color>
+    <color name="ash_Que">#999999</color>
+    <color name="widthAsh_Que">#f2f2f2</color>
+    <color name="sreachTextAsh_Que">#666666</color>
+    <color name="darkAsh_Que">#333333</color>
+    <color name="black_Que">#000000</color>
+    <color name="blue_Que">#3087ea</color>
+    <color name="green_Que">#4fcb9f</color>
+    <color name="red_Que">#d92109</color>
+    <color name="red">#c9230d</color>
+
+
+</resources>
