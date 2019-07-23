@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/write_Que"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     tools:context=".activity.CircleDetailsActivity">
 
     <ScrollView
@@ -182,9 +183,13 @@
 
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/recycler_img"
+                fresco:placeholderImage="@drawable/error"
                 android:layout_width="320dp"
+                app:progressBarImage="@drawable/loading_01"
                 android:layout_height="144dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="10dp"
+                fresco:failureImage="@drawable/error" />
 
         </LinearLayout>
     </ScrollView>
