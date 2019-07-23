@@ -74,7 +74,7 @@ public class SreachActivity extends IBaseActivity implements IMainView.IMainShow
                 LinearLayoutManager.VERTICAL,false));
         //设置历史列表数据
         historyAdapter.setListRefresh(list);
-        //设置历史列表适配器
+        //设置历史列表适配器112
         recyclerHistory.setAdapter(historyAdapter);*/
 
         //搜索适配器
