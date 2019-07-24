@@ -8,7 +8,7 @@
     android:background="@drawable/start_img"
     tools:context=".view.activity.StartActivity">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -50,5 +50,5 @@
             android:text="©八维移动通信学院毕业作品"
             android:textColor="#666666"
             android:textSize="14sp" />
-    </RelativeLayout>
+    </RelativeLayout>-->
 </RelativeLayout>

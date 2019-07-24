@@ -68,6 +68,7 @@
     <!--病友圈搜索-->
     <string name="sreach">搜索</string>
     <string name="sreach_hostory">搜索历史</string>
+    <string name="clear_sreach_hostory">清除搜索历史记录</string>
     <string name="sreach_hint">请输入病症名称或标题关键字</string>
     <string name="go_no_sreach">抱歉! 没有找到 “</string>
     <string name="apirs_no_sreach">” 的相关病友圈</string>

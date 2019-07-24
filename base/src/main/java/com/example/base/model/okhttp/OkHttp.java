@@ -23,7 +23,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class OkHttp {
 
     public final Api api;
-
+    //内网环境
+    private String padding_Url="test.bwstudent.com";
+    //外网接口
+    private String margin_URL="mobile.bwstudent.com";
     private OkHttp() {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new Logg())
@@ -33,7 +36,7 @@ public class OkHttp {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://mobile.bwstudent.com/")
+                .baseUrl(padding_Url)
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

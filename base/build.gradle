@@ -1,7 +1,8 @@
 apply plugin: 'com.android.library'
 //butterknife
 apply plugin: 'com.jakewharton.butterknife'
-
+//greendao
+apply plugin: 'org.greenrobot.greendao' // 加入这句
 android {
     compileSdkVersion 28
 
@@ -21,7 +22,11 @@ android {
         }
 
     }
-
+    greendao {//加入greendao
+        schemaVersion 1
+        daoPackage 'com.example.base.database' //改成自己的包名
+        targetGenDir 'src/main/java'
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -103,5 +108,10 @@ dependencies {
 
     //XBanner
     api 'com.github.xiaohaibin:XBanner:1.6.1'
+
+//GreenDao
+//加入依赖
+    api 'org.greenrobot:greendao:3.2.2'
+    api 'org.greenrobot:greendao-generator:3.2.2'
 
 }

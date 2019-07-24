@@ -1,12 +1,9 @@
 package com.example.question.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -23,8 +20,6 @@ import com.example.question.adapter.CircleAdapter;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-
 @Route(path = "/question/QuestionActivity")
 public class QusetionActivity extends IBaseActivity implements IMainView.IMainShow {
     @BindView(R2.id.back)
